@@ -2,7 +2,12 @@
 (async function() {
     // ========================
     // КОНФИГУРАЦИЯ КОМИКСОВ
-    // Добавляй новые комиксы по образцу ниже.
+    // Добавляй новые комиксы прямо сюда! Инструкция:
+    // 1. Скопируй объект и вставь в массив COMICS.
+    // 2. id — уникальное имя (латиница), partNumber — номер части.
+    // 3. Положи обложку в images/cover-твой-id.png.
+    // 4. Для каждой панели укажи путь к PNG и подпись.
+    // 5. Статус: "planned" — ещё не вышло, "archive" — доступно.
     // ========================
     const COMICS = [
         {
@@ -11,7 +16,7 @@
             status: "planned",
             cover: "images/cover-glotkagrad.png",
             description: "Оригинальный проект про вселенную Ильи! Следите за анонсами!",
-            parts: []
+            parts: [] // пока частей нет
         },
         {
             id: "cat-vasya",
@@ -20,12 +25,48 @@
             cover: "images/cover-cat-vasya.png",
             description: "Легендарный серый кот, который всегда попадает в истории. Все шесть частей в одном флаконе!",
             parts: [
-                { partNumber: 1, title: "Часть 1: знакомство", panels: [ { image: "images/vasyacat/strip1.png", caption: "" } ] },
-                { partNumber: 2, title: "Часть 2: Это мне?", panels: [ { image: "images/vasyacat/strip2.png", caption: "" } ] },
-                { partNumber: 3, title: "Часть 3: Про спячку", panels: [ { image: "images/vasyacat/strip3.png", caption: "" } ] },
-                { partNumber: 4, title: "Часть 4: 3Д принтер", panels: [ { image: "images/vasyacat/strip4.png", caption: "" } ] },
-                { partNumber: 5, title: "Часть 5: Не хватает", panels: [ { image: "images/vasyacat/strip5.png", caption: "" } ] },
-                { partNumber: 6, title: "Часть 6: Почтальон", panels: [ { image: "images/vasyacat/strip6.png", caption: "" } ] }
+                {
+                    partNumber: 1,
+                    title: "Часть 1: знакомство",
+                    panels: [
+                        { image: "images/vasyacat/strip1.png", caption: "" },
+                    ]
+                },
+                {
+                    partNumber: 2,
+                    title: "Часть 2: Это мне?",
+                    panels: [
+                        { image: "images/vasyacat/strip2.png", caption: "" },
+                    ]
+                },
+                {
+                    partNumber: 3,
+                    title: "Часть 3: Про спячку",
+                    panels: [
+                        { image: "images/vasyacat/strip3.png", caption: "" },
+                    ]
+                },
+                {
+                    partNumber: 4,
+                    title: "Часть 4: 3Д принтер",
+                    panels: [
+                        { image: "images/vasyacat/strip4.png", caption: "" },
+					]
+                },
+                {	
+					partNumber: 5,
+                    title: "Часть 5: Не хватает",
+                    panels: [
+                        { image: "images/vasyacat/strip5.png", caption: "" },
+					]
+                },
+                {
+					partNumber: 6,
+                    title: "Часть 6: Почтальон",
+                    panels: [
+                        { image: "images/vasyacat/strip6.png", caption: "" },					
+                    ]
+                }
             ]
         },
         {
@@ -42,32 +83,32 @@
                         { image: "images/PVVMK/p1/panel1.png", caption: "" },
                         { image: "images/PVVMK/p1/panel2.png", caption: "Вася: Ого!" },
                         { image: "images/PVVMK/p1/panelwide1.png", caption: "Вася: Берег!" },
-                        { image: "images/PVVMK/p1/panel3.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel4.png", caption: "Диктор: Замёрз, да?" },
-                        { image: "images/PVVMK/p1/panelwide2.png", caption: "Диктор: Сначала сруби дерево." },
-                        { image: "images/PVVMK/p1/panel5.png", caption: "Вася: Чё? Диктор: Голыми руками." },
-                        { image: "images/PVVMK/p1/panel6.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel7.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel8.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel9.png", caption: "Диктор: Деревья не падают, бояться нечего." },
-                        { image: "images/PVVMK/p1/panel10.png", caption: "Диктор: А про твою челюсть я так не скажу." },
-                        { image: "images/PVVMK/p1/panel11.png", caption: "Диктор: Сделай там доски и верстак." },
-                        { image: "images/PVVMK/p1/panel12.png", caption: "Диктор: Вот тебе и царь майна." },
-                        { image: "images/PVVMK/p1/panel13.png", caption: "Диктор: Добро пожаловать." },
-                        { image: "images/PVVMK/p1/panel14.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel15.png", caption: "Диктор: Время добыть камня." },
-                        { image: "images/PVVMK/p1/panel16.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel17.png", caption: "" },
-                        { image: "images/PVVMK/p1/panel18.png", caption: "Диктор: Сохрани его на потом." },
-                        { image: "images/PVVMK/p1/panel19.png", caption: "Диктор: Время найти поляну для дома!" },
-                        { image: "images/PVVMK/p1/panel20.png", caption: "Диктор: Эта выглядит неплохо." },
-                        { image: "images/PVVMK/p1/panel21.png", caption: "Диктор: Строй, я приду позже." },
-                        { image: "images/PVVMK/p1/panel22.png", caption: "ОЧЕНЬ МНОГО ВРЕМЕНИ СПУСТЯ." },
-                        { image: "images/PVVMK/p1/panel23.png", caption: "Диктор: Выглядит как экскременты, буквально." },
-                        { image: "images/PVVMK/p1/panel24.png", caption: "Диктор: И зачем я тебя за булыгой слал?" },
-                        { image: "images/PVVMK/p1/panel25.png", caption: "НИЧТОЖЕСТВО." },
-                        { image: "images/PVVMK/p1/panel26.png", caption: "Диктор: Хоть внутри не так плохо, печка, верстак и прочее есть." },
-                        { image: "images/PVVMK/p1/panelwide3.png", caption: "Диктор: Чтож, а мы прощаемся с вами! До новых встреч." }
+						{ image: "images/PVVMK/p1/panel3.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel4.png", caption: "Диктор: Замёрз, да?" },
+						{ image: "images/PVVMK/p1/panelwide2.png", caption: "Диктор: Сначала сруби дерево." },
+						{ image: "images/PVVMK/p1/panel5.png", caption: "Вася: Чё? Диктор: Голыми руками." },
+						{ image: "images/PVVMK/p1/panel6.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel7.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel8.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel9.png", caption: "Диктор: Деревья не падают, бояться нечего." },
+						{ image: "images/PVVMK/p1/panel10.png", caption: "Диктор: А про твою челюсть я так не скажу." },
+						{ image: "images/PVVMK/p1/panel11.png", caption: "Диктор: Сделай там доски и верстак." },
+						{ image: "images/PVVMK/p1/panel12.png", caption: "Диктор: Вот тебе и царь майна." },
+						{ image: "images/PVVMK/p1/panel13.png", caption: "Диктор: Добро пожаловать." },
+						{ image: "images/PVVMK/p1/panel14.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel15.png", caption: "Диктор: Время добыть камня." },
+						{ image: "images/PVVMK/p1/panel16.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel17.png", caption: "" },
+						{ image: "images/PVVMK/p1/panel18.png", caption: "Диктор: Сохрани его на потом." },
+						{ image: "images/PVVMK/p1/panel19.png", caption: "Диктор: Время найти поляну для дома!" },
+						{ image: "images/PVVMK/p1/panel20.png", caption: "Диктор: Эта выглядит неплохо." },
+						{ image: "images/PVVMK/p1/panel21.png", caption: "Диктор: Строй, я приду позже." },
+						{ image: "images/PVVMK/p1/panel22.png", caption: "ОЧЕНЬ МНОГО ВРЕМЕНИ СПУСТЯ." },
+						{ image: "images/PVVMK/p1/panel23.png", caption: "Диктор: Выглядит как экскременты, буквально." },
+						{ image: "images/PVVMK/p1/panel24.png", caption: "Диктор: И зачем я тебя за булыгой слал?" },
+						{ image: "images/PVVMK/p1/panel25.png", caption: "НИЧТОЖЕСТВО." },
+						{ image: "images/PVVMK/p1/panel26.png", caption: "Диктор: Хоть внутри не так плохо, печка, верстак и прочее есть." },
+						{ image: "images/PVVMK/p1/panelwide3.png", caption: "Диктор: Чтож, а мы прощаемся с вами! До новых встреч." },
                     ]
                 }
             ]
@@ -75,15 +116,19 @@
     ];
 
     // ================
-    // ЗАГЛУШКИ ДЛЯ PNG
-    // ================
+    // ЗАГЛУШКИ ДЛЯ PNG (чтобы не было битых картинок, пока ты не добавишь свои)
     function placeholderSVG(text, width=400, height=250) {
         return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='${width}' height='${height}' viewBox='0 0 ${width} ${height}'%3E%3Crect width='100%25' height='100%25' fill='%23f4e5c9'/%3E%3Ctext x='50%25' y='50%25' font-family='Comic Sans MS, cursive' font-size='24' font-weight='bold' fill='%231e1a16' text-anchor='middle' dy='.3em'%3E${text}%3C/text%3E%3C/svg%3E`;
     }
 
+    function getImageSrc(path, fallbackText) {
+        // Проверяем, существует ли файл (простая проверка через onerror вставлена в HTML)
+        // Здесь просто возвращаем путь, а onerror заменит на заглушку
+        return path;
+    }
+
     // ================
     // РОУТИНГ
-    // ================
     const app = document.getElementById('app');
     
     function renderMainPage() {
@@ -106,9 +151,6 @@
             <header class="main-header">
                 <h1>📚 КОМИКСЫ ИЛЬИ</h1>
                 <div class="subtitle">💥 читай, смейся, выживай 💥</div>
-                <div style="margin-top:20px;">
-                    <button class="back-btn" onclick="navigateToNews()">📝 Новости</button>
-                </div>
             </header>
             <div class="comics-grid">${gridHtml}</div>
         `;
@@ -173,27 +215,6 @@
         `;
     }
 
-    function renderNewsPage() {
-        // Сортируем по дате (сначала новые)
-        const sortedPosts = [...POSTS].sort((a, b) => (b.date > a.date ? 1 : -1));
-        const newsHtml = sortedPosts.map(post => `
-            <div class="news-item">
-                <div class="news-date">${post.date}</div>
-                <h2 class="news-title">${post.title}</h2>
-                <div class="news-text">${post.text}</div>
-                ${post.image ? `<img class="news-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.style.display='none';">` : ''}
-            </div>
-        `).join('');
-
-        app.innerHTML = `
-            <div class="news-container">
-                <h2 style="margin-top:10px; font-family:'Comic Neue',cursive; font-size:2rem;">📝 Новости автора</h2>
-                ${newsHtml}
-                <button class="back-btn" style="margin-top:20px;" onclick="navigateToMain()">🏠 На главную</button>
-            </div>
-        `;
-    }
-
     // Глобальные функции для onclick
     window.navigateToMain = () => {
         window.location.hash = '';
@@ -207,18 +228,10 @@
         window.location.hash = `#/comic/${comicId}/part/${partNum}`;
         renderPartViewer(comicId, partNum);
     };
-    window.navigateToNews = () => {
-        window.location.hash = '#/news';
-        renderNewsPage();
-    };
 
-    // Обработчик хеша
+    // Обработчик хеша при загрузке и изменении
     function handleHashChange() {
-        const hash = window.location.hash.slice(1);
-        if (hash === '/news') {
-            renderNewsPage();
-            return;
-        }
+        const hash = window.location.hash.slice(1); // убираем #
         const matchComicPart = hash.match(/^\/comic\/([^/]+)\/part\/(\d+)$/);
         const matchComic = hash.match(/^\/comic\/([^/]+)$/);
         if (matchComicPart) {
@@ -231,5 +244,5 @@
     }
 
     window.addEventListener('hashchange', handleHashChange);
-    handleHashChange();
+    handleHashChange(); // первый запуск
 })();
