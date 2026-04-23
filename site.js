@@ -27,42 +27,42 @@
             parts: [
                 {
                     partNumber: 1,
-                    title: "Часть 1: знакомство",
+                    title: "Стрип 1: знакомство",
                     panels: [
                         { image: "images/vasyacat/strip1.png", caption: "" },
                     ]
                 },
                 {
                     partNumber: 2,
-                    title: "Часть 2: Это мне?",
+                    title: "Стрип 2: Это мне?",
                     panels: [
                         { image: "images/vasyacat/strip2.png", caption: "" },
                     ]
                 },
                 {
                     partNumber: 3,
-                    title: "Часть 3: Про спячку",
+                    title: "Стрип 3: Про спячку",
                     panels: [
                         { image: "images/vasyacat/strip3.png", caption: "" },
                     ]
                 },
                 {
                     partNumber: 4,
-                    title: "Часть 4: 3Д принтер",
+                    title: "Стрип 4: 3Д принтер",
                     panels: [
                         { image: "images/vasyacat/strip4.png", caption: "" },
 					]
                 },
                 {	
 					partNumber: 5,
-                    title: "Часть 5: Не хватает",
+                    title: "Стрип 5: Не хватает",
                     panels: [
                         { image: "images/vasyacat/strip5.png", caption: "" },
 					]
                 },
                 {
 					partNumber: 6,
-                    title: "Часть 6: Почтальон",
+                    title: "Стрип 6: Почтальон",
                     panels: [
                         { image: "images/vasyacat/strip6.png", caption: "" },					
                     ]
@@ -109,6 +109,57 @@
 						{ image: "images/PVVMK/p1/panel25.png", caption: "НИЧТОЖЕСТВО." },
 						{ image: "images/PVVMK/p1/panel26.png", caption: "Диктор: Хоть внутри не так плохо, печка, верстак и прочее есть." },
 						{ image: "images/PVVMK/p1/panelwide3.png", caption: "Диктор: Чтож, а мы прощаемся с вами! До новых встреч." },
+						]
+                },
+                {	
+					partNumber: 2,
+                    title: "Часть 2: Шахтёрство",
+                    panels: [
+                        { image: "images/PVVMK/p2/panel1.png", caption: "Диктор: Первый комикс доживший до 2 части." },
+						{ image: "images/PVVMK/p2/panel2.png", caption: "Диктор: Сегодня мы освоим шахтёрство." },
+						{ image: "images/PVVMK/p2/panel3.png", caption: "Диктор: Всё-таки хорошо что ты камень приберёг." },
+						{ image: "images/PVVMK/p2/panel4.png", caption: "Диктор: Для начала логично надо найти пещеру." },
+						{ image: "images/PVVMK/p2/panel5.png", caption: "СПУСТЯ ВРЕМЯ" },
+						{ image: "images/PVVMK/p2/panel6.png", caption: "Диктор: Там вся нечисть хоронится, туда нам надо." },
+						{ image: "images/PVVMK/p2/panel7.png", caption: "Диктор: В шахте не выжить без каменных инструментов и факелов." },
+						{ image: "images/PVVMK/p2/panel8.png", caption: "Диктор: Добудь материалов побыстрее и линяй отсюда" },
+						{ image: "images/PVVMK/p2/panel9.png", caption: "Диктор: Смотри, железо!" },
+						{ image: "images/PVVMK/p2/panel10.png", caption: "Диктор: Отлично!" },
+						{ image: "images/PVVMK/p2/panel11.png", caption: "*звуки того как зомби хрипит* Диктор: О нет..." },
+						{ image: "images/PVVMK/p2/panel12.png", caption: "Диктор: Да их тут армия!" },
+						{ image: "images/PVVMK/p2/panel13.png", caption: "Диктор: БЕГИ!" },
+						{ image: "images/PVVMK/p2/panel14.png", caption: "" },
+						{ image: "images/PVVMK/p2/panel15.png", caption: "ЧАСЫ КОПАНИЙ СПУСТЯ" },
+						{ image: "images/PVVMK/p2/panel16.png", caption: "Диктор: О, это лава! Это как джакузи, только где свою пятую точку дольше одной секунды не удержать." },
+						{ image: "images/PVVMK/p2/panel17.png", caption: "Диктор: Кстати рядом с ней часто бывают алмазы - самый крутой материал нашего мира, вот кстати и он." },
+						{ image: "images/PVVMK/p2/panel18.png", caption: "Диктор: Ты выглядишь как придурок." },
+						{ image: "images/PVVMK/p2/panel19.png", caption: "Диктор: Я вижу всю боль в твоих глазах, однако, мне абсолютно по барабану!" },
+						{ image: "images/PVVMK/p2/panel20.png", caption: "Диктор: Начиная наше более осознанное углубление - 16 лет назад пещеры были достаточно редкими." },
+						{ image: "images/PVVMK/p2/panel21.png", caption: "Диктор: Однако, сейчас они чуть-ли не каждые пять метров + куча мусора которые полезны только в строительстве, А ВОТ ПРИ НОТЧЕ ТАКОГО НЕ БЫЛО!" },
+						{ image: "images/PVVMK/p2/panel22.png", caption: "Диктор: Стой, это-же медь!" },
+						{ image: "images/PVVMK/p2/panel23.png", caption: "Диктор: Раньше медь была куском, ну... КХМ-КХМ, кое-чего. Сейчас-же из неё можно сделать что угодно на НЕ любой цвет, но на любой вкус. Про дробовик даже не думай." },
+						{ image: "images/PVVMK/p2/panel24.png", caption: "Диктор: Я заговорился, тебя атакуют сзади, ТАК-ЧТО ОБЕРНИСЬ ИДИОТИНА!" },
+						{ image: "images/PVVMK/p2/panel25.png", caption: "Диктор: ВОТ-ЖЕ ЧЁРТ!" },
+						{ image: "images/PVVMK/p2/panel26.png", caption: "" },
+						{ image: "images/PVVMK/p2/panel27.png", caption: "" },
+						{ image: "images/PVVMK/p2/panel28.png", caption: "Диктор: Мы попали в западню, да и меча у нас нет, а виноват в этом ты, ибо я точно не тот чел что обучает тебя игре" },
+						{ image: "images/PVVMK/p2/panel29.png", caption: "Диктор: Однако, нам повезло найди заброшенную шахту - структура которая случайно появляется в шахте, в ней есть куча всего полезного." },
+						{ image: "images/PVVMK/p2/panel30.png", caption: "Диктор: Вот и сундук, открой его и увидим содержимое." },
+						{ image: "images/PVVMK/p2/panel31.png", caption: "Диктор: Нам ПОВЕЗЛО найти меч в это ЗАБРОШЕННОМ повторюсь месте где были ШАХТЁРЫ а не борцы с монстрами." },
+						{ image: "images/PVVMK/p2/panel32.png", caption: "*вставьте сюда эпичную музыку*" },
+						{ image: "images/PVVMK/p2/panel33.png", caption: "ХРЯСЬ!" },
+						{ image: "images/PVVMK/p2/panel34.png", caption: "Диктор: Вот дела! Так мы можем выбрать свою судьбу" },
+						{ image: "images/PVVMK/p2/panel35.png", caption: "" },
+						{ image: "images/PVVMK/p2/panel36.png", caption: "Вася: ААААААААААААААААААААААААААААААААААААААААААААААААААААААААА-" },
+						{ image: "images/PVVMK/p2/panel37.png", caption: "Диктор: Ладно автор более ленив чем я думал..." },
+						{ image: "images/PVVMK/p2/panel38.png", caption: "Диктор: Заходя во вторую дыру тут у нас аметисты." },
+						{ image: "images/PVVMK/p2/panel39.png", caption: "Диктор: Из аметиста можно сделать кучу ПОЛЕЗНЫХ вещей... Ах ладно кому я вру." },
+						{ image: "images/PVVMK/p2/panel40.png", caption: "Диктор: СЕРЬЁЗНО, КОМУ НУЖНА ПОДЗОРНАЯ ТРУБА С ZOOM-ОМ ОПТИФАЙНА?" },
+						{ image: "images/PVVMK/p2/panel41.png", caption: "Диктор: Пришло время покинуть нашу дыру и сделать в неё красивый вход который некому похвалить." },
+						{ image: "images/PVVMK/p2/panel42.png", caption: "Табличка: Шахта." },
+						{ image: "images/PVVMK/p2/panel43.png", caption: "Табличка: :/" },
+						{ image: "images/PVVMK/p2/panelwide1.png", caption: "Диктор: В следующей части мы поговорим про материалы с шахты, а пока - до новых встреч дорогие друзья! Табличка: Привет Рони." },
+						
                     ]
                 }
             ]
